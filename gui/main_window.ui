@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>846</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Runners</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(213, 198, 180);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(75, 75, 75)</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_download_in_db">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+color: black;
+background-color: rgba(255, 132, 83,  200);
+font: 9pt &quot;Verdana&quot;;
+width: 200 px;
+height: 50 px;
+}
+
+QPushButton:hover:!pressed {
+background-color: rgba(255, 132, 83,  250);
+}
+
+QPushButton:hover:pressed {
+background-color: rgba(255, 132, 83,  180);
+}</string>
+         </property>
+         <property name="text">
+          <string>ЗАГРУЗИТЬ ФАЙЛЫ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_count_results">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+color: black;
+background-color: rgba(255, 132, 83,  200);
+font: 9pt &quot;Verdana&quot;;
+width: 200 px;
+height: 50 px;
+}
+
+QPushButton:hover:!pressed {
+background-color: rgba(255, 132, 83,  250);
+}
+
+QPushButton:hover:pressed {
+background-color: rgba(255, 132, 83,  180);
+}</string>
+         </property>
+         <property name="text">
+          <string>ПОДСЧЕТ РЕЗУЛЬТАТОВ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_save_results_json">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+color: black;
+background-color: rgba(255, 132, 83,  200);
+font: 9pt &quot;Verdana&quot;;
+width: 200 px;
+height: 50 px;
+}
+
+QPushButton:hover:!pressed {
+background-color: rgba(255, 132, 83,  250);
+}
+
+QPushButton:hover:pressed {
+background-color: rgba(255, 132, 83,  180);
+}</string>
+         </property>
+         <property name="text">
+          <string>СОХРАНИТЬ РЕЗУЛЬТАТЫ (JSON)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <widget class="QTableView" name="table_results">
+         <property name="styleSheet">
+          <string notr="true">QTableView {
+background-color: rgba(213, 198, 180, 200);
+selection-background-color: rgba(213, 198, 180, 250);
+}
+
+QTableView: section: {
+background-color: rgba(255, 132, 83,  120);
+border: none;
+height: 50 px;
+font-size: 14 pt;
+}
+
+QTableView: item {
+border-style: none;
+border-bottom: rgba(255, 132, 83,  120);
+}
+
+QTableView: item: select {
+border: none;
+border-bottom: rgba(213, 198, 180, 100);
+}
+</string>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

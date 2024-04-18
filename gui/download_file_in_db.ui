@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>298</width>
+    <height>386</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>298</width>
+    <height>386</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(213, 198, 180, 150);</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="maximumSize">
+      <size>
+       <width>280</width>
+       <height>368</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_open_file">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: rgba(255, 132, 83,  200);
+width: 200 px;
+height: 50 px;
+font: 10pt &quot;Verdana&quot;;
+}
+
+QPushButton:hover:!pressed {
+background-color: rgba(255, 132, 83,  250);
+}
+
+QPushButton:hover:pressed {
+background-color: rgba(255, 132, 83,  180);
+}</string>
+        </property>
+        <property name="text">
+         <string>ОТКРЫТЬ ФАЙЛ</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_path">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(213, 198, 180, 150);
+width: 200 px;
+height: 25 px;
+font: 8pt &quot;Verdana&quot;;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_download">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: rgba(255, 132, 83,  200);
+width: 200 px;
+height: 50 px;
+font: 10pt &quot;Verdana&quot;;
+}
+
+QPushButton:hover:!pressed {
+background-color: rgba(255, 132, 83,  250);
+}
+
+QPushButton:hover:pressed {
+background-color: rgba(255, 132, 83,  180);
+}</string>
+        </property>
+        <property name="text">
+         <string>ЗАГРУЗИТЬ</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
